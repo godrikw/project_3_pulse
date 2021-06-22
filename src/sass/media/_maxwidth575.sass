@@ -1,4 +1,10 @@
 @media (max-width: 575px)
+    .main-descr
+        font-size: 21px
+        text-align: center
+        &_left
+            font-size: 21px
+       
     .header
         display: flex
         align-items: center
@@ -22,7 +28,7 @@
             width: 100%
             &_text-main
                 text-align: center
-                font-size: 20px
+                font-size: 18px
                 margin-top: 20px
             &_text
                 font-size: 13px
@@ -40,10 +46,6 @@
             font-size: 20px
         &__icons
             width: 310px
-    .main-descr
-        text-align: center
-        &_left
-            font-size: 25px
     .consultation
         padding: 65px 0 50px 0
         &__wrapper
@@ -66,4 +68,19 @@
             margin: 15px 0 15px 0
     .catalog__content
         justify-content: center
-            
+    .recall__item
+        flex-direction: column
+        align-items: center
+        &:nth-child(2)
+            margin: 71px 0 71px 0
+        &_img
+            margin: 0
+        &_text
+            display: flex
+            flex-direction: column
+            align-items: center
+            &-title
+                margin-top: 30px
+            &-main
+                text-align: center
+                font-size: 14px
