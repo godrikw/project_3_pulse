@@ -115,24 +115,27 @@
         &__list
             position: relative
             width: 50%
-            margin-left: 20px
-            transform: translateX(-0%)
-            padding-right: 20px
-            transition: 0.5s all
-            padding-left: 19px
+            transition: .5s all
             padding-bottom: 0
-            list-style-type: none
             margin: 0
+            ul
+                position: relative
+                width: 100%
+                transform: translateX(0)
+                transition: .5s all
+                margin: 0 auto
+                padding: 0 22px 0px 37px
             &_active
                 transform: translateX(-100%)
                 margin-left: 0px
             li
                 position: relative
-                color: #555555
+                color: #555
                 font-size: 14px
                 font-weight: 300
-                margin-bottom: 20px
-                width: 98%
+                margin-bottom: 10px
+                width: 96%
+                list-style-type: none
                 &:before
                     content: ''
                     position: absolute
@@ -141,6 +144,9 @@
                     background-color: $main-color
                     left: -19px
                     top: 6px
+            
+
+
         &__back
             position: absolute
             bottom: 0
